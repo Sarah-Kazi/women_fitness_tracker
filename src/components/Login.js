@@ -1,0 +1,43 @@
+// src/components/Login.js
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+function Login({ setIsLoggedIn }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const Navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Simple demo check (replace with real auth later)
+    if(email && password) {
+      localStorage.setItem('isLoggedIn', 'true');
+      console.log("Navigating to home...");
+      setIsLoggedIn(true); 
+      Navigate('/');
+    }
+  };
+
+  return (
+    <div className="login-container">
+      <h2>🔑 Welcome Back!</h2>
+      <form onSubmit={handleLogin}>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
+}
+
+export default Login;

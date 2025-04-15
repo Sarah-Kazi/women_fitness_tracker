@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+.navbar {  
+  background: pink;  
+  padding: 20px;  
+}  
+
+.cycle-box {  
+  background: white;  
+  padding: 20px;  
+  margin: 20px;  
+  border-radius: 10px;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}  
+.container {  
+  display: grid;  
+  grid-template-columns: 1fr 1fr;  
+  gap: 20px;  
+  padding: 20px;  
+}  
+.rbc-calendar {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.logout-btn {
+  background: #ff4757;
+  margin-left: 15px;
+  padding: 8px 15px;
+}
+
+.workout-box,  
+.hero-box {  
+  background: white;  
+  padding: 20px;  
+  border-radius: 10px;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}  
+.rbc-event {
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 14px;
+}
+
+.rbc-event.actual-period {
+  background-color: #ff69b4; /* Solid pink for actual periods */
+}
+
+.rbc-event.predicted-period {
+  background-color: rgba(255, 105, 180, 0.5); /* Transparent pink for predicted */
+  border: 1px solid #ff69b4; /* Add border for visibility */
+}
+/* Add to App.css */
+.input-group {
+  margin: 10px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.phase-result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.phase-result h3 {
+  color: #6b46c1;
+  margin-bottom: 10px;
+}
+
+button {  
+  margin: 10px 0;  
+}  
+
+button {  
+  background: purple;  
+  color: white;  
+  border: none;  
+  padding: 10px;  
+  border-radius: 5px;  
+  cursor: pointer;  
+}  
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
